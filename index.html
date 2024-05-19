@@ -9,6 +9,14 @@
             rel="stylesheet"
         />
 
+        <!-- bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,18 +66,19 @@
                 <h3>Hello, I am</h3>
                 <h1>Daffa Tabiano</h1>
                 <p>
-                    Let's me Introduce my self with this website, i hope me
-                    could be join in your corporate and make big contribution
+                    Let's get to know me. I am a Front End Developer. I can
+                    build your website with HTML, CSS, and JavaScript, and also
+                    with React/Next.
                 </p>
 
                 <div class="social-media">
                     <a href="https://www.facebook.com/Daffaa.Tabiano/"
                         ><i class="bx bxl-facebook"></i
                     ></a>
-                    <a href="https://www.twitter.com"
+                    <a href="https://www.twitter.com/daffatabiano/"
                         ><i class="bx bxl-twitter"></i
                     ></a>
-                    <a href="https://www.instagram.com"
+                    <a href="https://www.instagram.com/daffatabianoo/"
                         ><i class="bx bxl-instagram-alt"></i
                     ></a>
                     <a href="https://www.linkedin.com/in/daffatabiano"
@@ -80,7 +89,7 @@
                 <a
                     href="./data/Cv_Ats_DaffaTabiano.pdf"
                     download="Cv_Ats_DaffaTabiano.pdf"
-                    class="btn"
+                    class="button"
                     >Download CV</a
                 >
             </div>
@@ -133,12 +142,130 @@
                     JavaScript, as well as modern frameworks such as React.js
                     and Next.js.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#contact" class="button">Contact Me</a>
             </div>
         </section>
         <!-- about section end -->
 
         <!-- sevice section  -->
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1
+                            class="custom-color modal-title fs-3"
+                            id="exampleModalLabel"
+                        >
+                            Frontend Web developer
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Dibimbing.id</h3>
+                        <h5>November 2023 - May 2024</h5>
+                        <br />
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn custom-button"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1
+                            class="custom-color modal-title fs-3"
+                            id="exampleModalLabel"
+                        >
+                            Customer Service
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>PT. Jaddi Pastrisindo Gemilang</h3>
+                        <h5>February 2022 - November 2023</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn custom-button"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="exampleModal3"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1
+                            class="custom-color modal-title fs-3"
+                            id="exampleModalLabel"
+                        >
+                            artistic
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn custom-button"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="service" id="service">
             <h2 class="heading">My <span>Services</span></h2>
@@ -149,10 +276,18 @@
                     <h3>Front End Development</h3>
                     <p>
                         I'm a Front End Developer. I can build your website with
-                        HTML, CSS, and JavaScript, and also with React. I have a
-                        some experience in this field, directing some projects
+                        HTML, CSS, and JavaScript, and also with React/Next. I
+                        have a some experience in this field, directing some
+                        projects
                     </p>
-                    <a href="#" class="btn">Read More</a>
+                    <button
+                        class="button"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        About FED
+                    </button>
                 </div>
                 <div class="services-box">
                     <i class="bx bxs-palette"></i>
@@ -162,7 +297,14 @@
                         create your design with Adobe Photoshop, Canva, and
                         Figma. I also have some experience in this field
                     </p>
-                    <a href="#" class="btn">Read More</a>
+                    <button
+                        class="button"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3"
+                    >
+                        About ART
+                    </button>
                 </div>
                 <div class="services-box">
                     <i class="bx bxs-user-voice"></i>
@@ -173,7 +315,14 @@
                         experience in this field, I have experience in the food
                         and beverage industry
                     </p>
-                    <a href="#" class="btn">Read More</a>
+                    <button
+                        class="button"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2"
+                    >
+                        About CS
+                    </button>
                 </div>
             </div>
         </section>
@@ -275,18 +424,18 @@
                             <img src="image/testimonial1.jpg" alt="" />
                             <h3>JavaScript Algorithms & Data Structures</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Molestias eaque aliquam
-                                impedit vitae sit numquam blanditiis, ipsam
-                                debitis mollitia possimus libero harum ad
-                                excepturi dolor accusamus autem sed quo
-                                veritatis magni. Ducimus nulla fuga, quis
-                                asperiores ea nemo optio qui. Sapiente
-                                consequuntur debitis assumenda explicabo facilis
-                                vel exercitationem, neque molestias illum earum
-                                suscipit dolore voluptatem quia maxime expedita
-                                quis dolorem officiis perspiciatis placeat eius
-                                architecto mollitia?
+                                This Certifications is from the freeCodeCamp,
+                                and i hard to finish this program with any logic
+                                what i have, also i get help from google search
+                                . I love this program and i am very happy
+                                because it's could help me to learn. from basic
+                                to advanced level . with this program i can
+                                finish my project, and continue learning to next
+                                level i learn framework React and also Next. and
+                                i also have some experience in build project
+                                with using React and library Next because i
+                                start in here to can build my project react to
+                                next step level.
                             </p>
                         </div>
                         <div class="testimonial-slide swiper-slide">
@@ -339,23 +488,44 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
 
-            <form action="#">
+            <form onsubmit="whatsappMe()" action="#">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" />
-                    <input type="email" placeholder="Email Address" />
+                    <input
+                        id="fullname"
+                        type="text"
+                        placeholder="Full Name"
+                        required
+                    />
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Email Address"
+                    />
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile Number" />
-                    <input type="email" placeholder="Email Subject" />
+                    <input
+                        id="number"
+                        type="number"
+                        placeholder="Mobile Number (optional)"
+                    />
+                    <input
+                        id="subject"
+                        type="text"
+                        placeholder="Email Subject"
+                    />
                 </div>
                 <textarea
-                    name=""
-                    id=""
+                    name="message"
+                    id="message"
                     cols="30"
                     rows="10"
                     placeholder="Your Massage"
+                    required
                 ></textarea>
-                <input type="submit" value="Send Massage" class="btn" />
+                <button type="submit" value="Send Massage" class="button">
+                    <i class="bx bxl-whatsapp"></i>
+                    Send Massage
+                </button>
             </form>
         </section>
 
@@ -376,6 +546,16 @@
                 <a href="#home"><i class="bx bxs-up-arrow"></i></a>
             </div>
         </footer>
+
+        <!-- bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- WhatsappMe Script -->
+        <script src="js/whatsappme.js"></script>
 
         <!-- scroll reveal -->
         <script src="https://unpkg.com/scrollreveal"></script>

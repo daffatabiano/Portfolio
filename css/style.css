@@ -28,6 +28,10 @@ html {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
@@ -38,7 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 7%;
+    padding: 2rem 5%;
     background: transparent;
     display: flex;
     align-items: center;
@@ -118,7 +122,8 @@ section {
 }
 
 .home .home-content {
-    max-width: 44rem;
+    width: 40%;
+    /* max-width: 44rem; */
 }
 
 .home .home-content h3 {
@@ -159,7 +164,7 @@ section {
     color: var(--white-color);
 }
 
-.btn {
+.button {
     display: inline-block;
     padding: 1.2rem 2.8rem;
     background: var(--main-color);
@@ -173,7 +178,28 @@ section {
     transition: 0.5s ease;
 }
 
-.btn:hover {
+.custom-color {
+    color: var(--main-color);
+    font-weight: 600;
+}
+.custom-button {
+    color: var(--main-color);
+    background: transparent;
+    border-color: var(--main-color);
+}
+
+.custom-button:hover {
+    color: var(--white-color);
+    background: var(--main-color);
+}
+
+.button.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);
@@ -184,8 +210,8 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 768px;
-    height: 768px;
+    width: 680px;
+    height: 100vh;
     overflow: hidden;
     pointer-events: none;
 }
@@ -194,8 +220,8 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 768px;
-    height: 768px;
+    width: 680px;
+    height: 680px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -234,9 +260,15 @@ section {
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
+    transform-origin: 340px;
     background: var(--bg-color);
     padding: 13px 0;
+    text-align: center;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home .profession-box .profession:nth-child(1) i {
@@ -253,14 +285,14 @@ section {
 }
 
 .home .profession h3 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     line-height: 1;
     font-weight: 600;
 }
 
 .home .profession-box .circle {
-    width: 568px;
-    height: 568px;
+    width: 480px;
+    height: 480px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
 }
@@ -271,17 +303,17 @@ section {
     right: 0;
     width: 0;
     height: 0;
-    border-top: 384px solid var(--main-color);
-    border-right: 384px solid var(--main-color);
-    border-bottom: 384px solid var(--main-color);
-    border-left: 384px solid transparent;
+    border-top: 340px solid var(--main-color);
+    border-right: 340px solid var(--main-color);
+    border-bottom: 340px solid var(--main-color);
+    border-left: 340px solid transparent;
 }
 
 .home-img img {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 45%;
+    width: 500px;
 }
 
 span {
@@ -559,7 +591,7 @@ span {
     resize: none;
 }
 
-.contact form .btn {
+.contact form .button {
     margin-top: 2rem;
     cursor: pointer;
 }
@@ -684,6 +716,9 @@ span {
 }
 
 @media (max-width: 768px) {
+    .home-content {
+        width: 100% !important;
+    }
     #menu-icon {
         display: block;
     }
@@ -791,8 +826,8 @@ span {
 
     .home .portfolio-box .circle {
         position: fixed;
-        width: 670px;
-        height: 670px;
+        width: 480px;
+        height: 480px;
         z-index: -1;
     }
 
