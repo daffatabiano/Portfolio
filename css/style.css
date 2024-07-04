@@ -119,6 +119,7 @@ section {
 .home {
     display: flex;
     align-items: center;
+    width: 100vw;
 }
 
 .home .home-content {
@@ -266,8 +267,6 @@ section {
     text-align: center;
     width: 230px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -309,11 +308,15 @@ section {
     border-left: 340px solid transparent;
 }
 
-.home-img img {
+.home-img {
     position: absolute;
+    width: 500px;
     bottom: 0;
     right: 0;
-    width: 500px;
+}
+
+img {
+    width: 100%;
 }
 
 span {
@@ -895,18 +898,21 @@ span {
     .home {
         padding: 0 3% 30rem;
     }
+    .home {
+        padding-top: 30px;
+    }
 
     .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-110px, -220px);
+        transform: rotate(-90deg) translate(-110px, -300%);
     }
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(5px, -335px);
+        transform: rotate(0deg) translate(5px, -400%);
     }
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
+        transform: rotate(90deg) translate(-105px, -700%);
     }
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -335px);
+        transform: rotate(180deg) translate(-210px, -400%);
     }
 
     .contact form .input-box input {
